@@ -1,0 +1,14 @@
+body {
+    background-color: antiquewhite;
+    color:darkgreen;
+    text-align: center;
+    text-size-adjust: 42px;
+    font-size: 150px;
+}
+#line1 {
+    transition-duration: 3s;
+}
+#line1:hover {
+scale: 1.6;
+}
+
