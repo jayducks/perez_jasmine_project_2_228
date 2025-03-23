@@ -4,11 +4,14 @@ body {
     text-align: center;
     text-size-adjust: 42px;
     font-size: 150px;
+    margin: 10%;
 }
 
 #sections {
     display: flex;
 }
+
+
 
 #foro {
     display: flex;
@@ -19,7 +22,38 @@ body {
     animation-delay: 1s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
+    background-color: brown;
 }
+#line2 {
+    padding: 25%;
+    background-color: aqua;
+    display: inline-flexbox;
+}
+ a{
+    text-decoration: none;
+ }
+#strange:hover {
+        font-style: italic;
+        font-stretch: expanded;
+        color:brown;
+       
+}
+
+
+
+/*edit to scroll sideways*/
+div.side-scroll {
+    overflow:auto;
+
+    background-color: rgb(15, 114, 81);
+    padding-left: 75px;
+    padding-right: 200px ;
+    white-space: nowrap;
+    padding-top: 10%;
+    padding-bottom: 20%;
+    display: inline-flexbox;
+}
+
 
 @keyframes fadeIn {
     from {

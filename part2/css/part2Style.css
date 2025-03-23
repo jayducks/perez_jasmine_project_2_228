@@ -1,3 +1,15 @@
 body {
     background-color: rgb(247, 247, 162);
+    text-align: center;
+    text-size-adjust: 42px;
+    font-size: 150px;
+}
+#pageTwo {
+    display: flex;
+}
+
+.fisherman {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
