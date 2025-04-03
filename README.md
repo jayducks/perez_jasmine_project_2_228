@@ -15,4 +15,6 @@ This project is a meant to display what community means to me using text and css
 
 # acknowledgment
 
+Credit to Nefe Emadamerho-Atori for "wave" animation
+
 Includes poem "Keeping Quiet" by Pablo Neruda

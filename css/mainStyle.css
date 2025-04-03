@@ -22,15 +22,35 @@ body {
     animation-delay: 1s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
-    background-color: brown;
+   /* background-color: brown;*/
 }
-#line2 {
-    padding: 25%;
-    background-color: aqua;
-    display: inline-flexbox;
+#foro:hover #line2{
+    opacity: 0;
 }
+.line2 {
+    padding: 7%;
+    /*background-color: aqua;*/
+    text-align: left;
+    animation-name: Line2; 
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+ 
+
+#line3 {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    animation-fill-mode: backwards;
+
+
+}
+
  a{
     text-decoration: none;
+ }
+ #strange {
+    font-size: 50px;
  }
 #strange:hover {
         font-style: italic;
@@ -40,18 +60,20 @@ body {
 }
 
 
-
 /*edit to scroll sideways*/
 div.side-scroll {
     overflow:auto;
-
-    background-color: rgb(15, 114, 81);
-    padding-left: 75px;
+    width: 900px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.88);
+    padding-left: 5px;
     padding-right: 200px ;
     white-space: nowrap;
     padding-top: 10%;
     padding-bottom: 20%;
-    display: inline-flexbox;
+    display: flex;
+    display: block;
+    font-size: 33px;
 }
 
 
@@ -61,5 +83,23 @@ div.side-scroll {
     }
     to {
         color: white;
+    }
+}
+
+@keyframes Together {
+    from {
+
+    }
+    to {
+
+    }
+}
+
+@keyframes Line2 {
+    25%{
+        translate: 200px;
+    }
+    50% {
+        transform: translate(500px,3000px); rotate: 45deg;
     }
 }
