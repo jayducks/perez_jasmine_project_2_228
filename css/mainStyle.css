@@ -103,3 +103,12 @@ div.side-scroll {
         transform: translate(500px,3000px); rotate: 45deg;
     }
 }
+@keyframes leftToRight {
+    from {
+        margin-right: 100%;
+    }
+    to {
+        margin-left: 80%;
+    }
+}
+
