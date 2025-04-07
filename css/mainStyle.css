@@ -11,6 +11,9 @@ body {
     display: flex;
 }
 
+#huge {
+    font-size: 300px;
+}
 
 
 #foro {
@@ -45,7 +48,11 @@ body {
 
 
 }
-
+ #gas {
+    opacity: 0.5;
+    box-shadow: #fff, 20,30;
+    
+ }
  a{
     text-decoration: none;
  }
@@ -58,11 +65,15 @@ body {
         color:brown;
        
 }
+#negatif:hover {
+    scale:1.55;
+    transition-duration: 2s;
+}
 
 #prep {
     animation-name: fadeIn;
     animation-duration: 5s;
-    animation-delay: 1s;
+    animation-delay: 0s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
 }
@@ -96,6 +107,7 @@ div.side-scroll {
 .typewriter-animation {
   animation: 
     typewriter 5s steps(50) 1s 1 normal both, blinkingCursor 500ms steps(50) infinite normal;
+    animation-delay: 8s;
 }
 #negatif {
     color:red;
@@ -147,7 +159,9 @@ div.side-scroll {
     border-right-color: transparent; 
 }
 }
-
+@keyframes Huge{
+    from {}
+}
 @keyframes cold {
     from {
         opacity: 0;

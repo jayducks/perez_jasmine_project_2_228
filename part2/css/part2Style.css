@@ -15,12 +15,16 @@ body {
     flex-direction: column;
     justify-content: space-around;
 }
+a {
+    color:rgb(16, 124, 233);
+    text-decoration: none;
+}
 /*flex colors to see*/
 .lineOne{
     /* background-color: aliceblue; */
     display: flexbox;
     padding: 7%;
-    animation-delay: 1s;
+    animation-delay: 0s;
     animation-duration: 1s;
     animation-direction: alternate-reverse;
     animation-name: leftToRight;
@@ -56,12 +60,12 @@ body {
     animation-duration: 1s;
     animation-iteration-count: initial;
     animation-fill-mode: forwards;
-    animation-delay: 3s;
+    animation-delay: 2.5s;
     animation-name: cold;
 }
 #would {
     animation-name: DownUp;
-    animation-delay: 3s;
+    animation-delay: 6s;
     animation-duration: 2s;
     animation-direction: reverse;
     
@@ -71,7 +75,7 @@ body {
     text-decoration: underline;
     padding: 2%;
     animation-name: DownUp;
-    animation-delay: 3.5s;
+    animation-delay: 6.5s;
     animation-duration: 2s;
     animation-direction: reverse;
 }
@@ -85,7 +89,7 @@ body {
 }*/
 #negatif {
     color:red;
-    animation-delay: 4s;
+    animation-delay: 6s;
     animation-duration: 3s;
     animation-name: UpDown;
     
@@ -98,13 +102,24 @@ body {
 
 #man {
     padding:9%;
-    
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 10s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+#hurt {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 11s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
 }
 #red {
     color: red;
     padding:10%;
     animation-name: fadeIn;
-    animation-delay: 1s;
+    animation-delay: 11s;
     animation-duration: 5s;
 }
 #sea{
@@ -113,7 +128,7 @@ body {
     text-align: center;
     font-size: 250px;
     animation-duration: 2s;
-    animation-delay: 2s;
+    animation-delay: 0s;
     animation-name: UpDown;
 }
 
@@ -195,7 +210,7 @@ body {
         color:transparent;
     }
     to {
-        color:red;
+        color:rgb(106, 13, 13);
     }
 }
 @keyframes UpDown {
