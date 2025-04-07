@@ -75,8 +75,84 @@ div.side-scroll {
     display: block;
     font-size: 33px;
 }
+#cursor{
+    position: relative;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+/* Animation */
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, blinkingCursor 500ms steps(50) infinite normal;
+}
+#negatif {
+    color:red;
+}
+#warsline {
+    font-size: 36px;
+    background-color: linear-gradient(to right, red, yellow);
 
+}
 
+#victory {
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: initial;
+    animation-play-state: running;
+    animation-direction: alternate-reverse;
+    animation-name: leftToRight;
+}
+
+.three {
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-name: fadeIn;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from {
+     border-right-color: rgba(0, 0, 0, 0.75);
+     }
+  to { 
+    border-right-color: transparent; 
+}
+}
+
+@keyframes cold {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 2;
+        color: blue;
+    }
+}
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+@keyframes backChange {
+    from {
+        background-color: blanchedalmond;
+    
+    }
+    to {
+        background-color: red;
+    }
+}
 @keyframes fadeIn {
     from {
         color: black;
@@ -85,6 +161,7 @@ div.side-scroll {
         color: white;
     }
 }
+
 
 @keyframes Together {
     from {
