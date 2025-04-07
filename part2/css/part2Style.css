@@ -17,7 +17,7 @@ body {
 }
 /*flex colors to see*/
 .lineOne{
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     display: flexbox;
     padding: 7%;
     animation-delay: 1s;
@@ -28,7 +28,7 @@ body {
 
 .lineTwo{
 
-    background-color: rgb(43, 98, 147);
+    /* background-color: rgb(43, 98, 147); */
     display:inline-flex;
     padding-left: 10%;
     padding-right: 6%;
@@ -37,7 +37,7 @@ body {
 }
 
 .lineThree{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     display:inline-flex;
     font-size: 100px;
     padding-left: 4%;
@@ -112,6 +112,9 @@ body {
     color:rgb(109, 109, 251);
     text-align: center;
     font-size: 250px;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-name: UpDown;
 }
 
 #sea span {
@@ -178,15 +181,7 @@ body {
         transform: translateY(-20px);
     }
 }
-@keyframes backChange {
-    from {
-        background-color: blanchedalmond;
-    
-    }
-    to {
-        background-color: red;
-    }
-}
+
 @keyframes leftToRight {
     from {
         margin-right: 100%;
