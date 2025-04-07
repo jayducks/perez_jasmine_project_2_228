@@ -59,7 +59,13 @@ body {
        
 }
 
-
+#prep {
+    animation-name: fadeIn;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
 /*edit to scroll sideways*/
 div.side-scroll {
     overflow:auto;
@@ -93,13 +99,18 @@ div.side-scroll {
 }
 #negatif {
     color:red;
+    
 }
 #warsline {
     font-size: 36px;
     background-color: linear-gradient(to right, red, yellow);
-
+    padding: 10%;
 }
 
+#warsline:hover {
+    scale: 1.5;
+    transition-duration: 2s;
+}
 #victory {
     animation-duration: 2s;
     animation-delay: 3s;
@@ -114,6 +125,16 @@ div.side-scroll {
     animation-fill-mode: forwards;
     animation-name: fadeIn;
 }
+
+#warsline {
+        font-size: 4rem;
+        color: #fff;
+        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+        animation: glow 1.5s infinite alternate;
+    }
+    
+   
+/* type animation by Nefe Emadamerho-Atori */
 @keyframes typewriter {
   from { width: 0; }
   to { width: 100%; }
@@ -136,12 +157,21 @@ div.side-scroll {
         color: blue;
     }
 }
+/* Nefe Emadamerho-Atori credit for wave and sea animation and glow */
 @keyframes wave {
     0%, 100% {
         transform: translateY(0);
     }
     50% {
         transform: translateY(-20px);
+    }
+}
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    }
+    100% {
+        text-shadow: 0 0 10px #f2ff00, 0 0 20px #fbb111, 0 0 40px #ffb700, 0 0 80px #f2ff00, 0 0 160px #ffbb00;
     }
 }
 @keyframes backChange {
@@ -188,4 +218,11 @@ div.side-scroll {
         margin-left: 80%;
     }
 }
-
+@keyframes leftToCenter {
+    from {
+        margin-right: 100%;
+    }
+    to {
+        margin-left: 50%;
+    }
+}
