@@ -137,7 +137,20 @@ div.side-scroll {
     animation-fill-mode: forwards;
     animation-name: fadeIn;
 }
+#interrupt {
+    font-weight: bolder;
+}
 
+#interrupt:hover {
+    transform: skew(23deg);
+}
+
+#sadness{
+    color:rgb(76, 218, 254);
+    font-style: oblique;
+    background-color: linear-gradient(to right, red, yellow);
+
+}
 #warsline {
         font-size: 4rem;
         color: #fff;
@@ -145,7 +158,19 @@ div.side-scroll {
         animation: glow 1.5s infinite alternate;
     }
     
-   
+    #moving:hover{
+        rotate: 360deg;
+        transition-duration: 2s;
+       
+    }
+    
+   #per {
+    animation-name: fadeIn;
+    animation-duration: 5s;
+    animation-delay: 11s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+   }
 /* type animation by Nefe Emadamerho-Atori */
 @keyframes typewriter {
   from { width: 0; }
